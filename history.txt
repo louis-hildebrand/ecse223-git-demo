@@ -1,0 +1,168 @@
+ 2006  git clone https://github.com/McGill-ECSE321-Fall2024/tutorial-003 eventregistration
+ 2007  cls
+ 2008  cd eventregistration/
+ 2009  cls
+ 2010  git log
+ 2011  git log --graph --all --oneline
+ 2012  ll
+ 2013  cat README.md 
+ 2014  git switch c527f
+ 2015  git switch c527f --detach
+ 2016  git log --graph --all --oneline
+ 2017  cat README.md 
+ 2018  git checkout main
+ 2019  git diff 0e7e907 f13a5d0
+ 2020  ll
+ 2021  ll .git
+ 2022  cd ..
+ 2023  cls
+ 2024  mkdir git-demo
+ 2025  cd git-demo
+ 2026  git status
+ 2027  git init
+ 2028  ll
+ 2029  git status
+ 2030  echo "# Git Demo" > README.md
+ 2031  git status
+ 2032  git add .
+ 2033  git status
+ 2034  git commit -m "Initial commit"
+ 2035  git status
+ 2036  git log --graph --all --oneline
+ 2037  echo "changed" > README.md 
+ 2038  git status
+ 2039  git add README.md 
+ 2040  git status
+ 2041  git restore --staged .
+ 2042  git status
+ 2043  git restore .
+ 2044  git status
+ 2045  git switch -c my-new-branch
+ 2046  git log --graph --all --oneline
+ 2047  vim README.md 
+ 2048  git status
+ 2049  git add .
+ 2050  git status
+ 2051  git commit -m "Update README.md"
+ 2052  git status
+ 2053  git log --graph --all --oneline
+ 2054  git switch main
+ 2055  cat README.md 
+ 2056  vim README.md 
+ 2057  git add .
+ 2058  git status
+ 2059  git commit -m "Update README.md"
+ 2060  git log --graph --all --oneline
+ 2061  git merge my-new-branch
+ 2062  git log --graph --all --oneline
+ 2063  git status
+ 2064  vim README.md 
+ 2065  git status
+ 2066  git add .
+ 2067  git status
+ 2068  git commit
+ 2069  git status
+ 2070  git log --graph --all --oneline
+ 2071  git remote add origin https://github.com/louis-hildebrand/ecse223-git-demo.git
+ 2072  git status
+ 2073  git remote
+ 2074  git status
+ 2075  git push
+ 2076  git push -u origin HEAD
+ 2077  git fetch
+ 2078  cd ..
+ 2079  cls
+ 2080  git clone https://github.com/louis-hildebrand/ecse223-git-demo.git fred
+ 2081  ll
+ 2082  cd fred/
+ 2083  git status
+ 2084  git log --graph --all --oneline
+ 2085  cd ..
+ 2086  git clone https://github.com/louis-hildebrand/ecse223-git-demo.git pauline
+ 2087  git clone https://github.com/louis-hildebrand/ecse223-git-demo.git just-in-case
+ 2088  cd git-demo/
+ 2089  echo "Alice" > alice.txt
+ 2090  git status
+ 2091  git add .
+ 2092  git status
+ 2093  git commit -m "Create alice.txt"
+ 2094  git status
+ 2095  git push
+ 2096  cd ../fred/
+ 2097  git status
+ 2098  git log --graph --all --oneline
+ 2099  echo "Fred" > fred.txt
+ 2100  git add .
+ 2101  git status
+ 2102  git commit -m "Create fred.txt"
+ 2103  git status
+ 2104  git log --graph --all --oneline
+ 2105  git fetch
+ 2106  git log --graph --all --oneline
+ 2107  cd ../pauline/
+ 2108  git status
+ 2109  git log --graph --all --oneline
+ 2110  echo "Pauline" > pauline.txt
+ 2111  git status
+ 2112  git add .
+ 2113  git status
+ 2114  git commit -m "Create pauline.txt"
+ 2115  git status
+ 2116* 
+ 2117  git status
+ 2118  git log --graph --all --oneline
+ 2119  git pull
+ 2120  git status
+ 2121  cd ../just-in-case/
+ 2122  echo "Pauline" > pauline.txt
+ 2123  git add .
+ 2124  git status
+ 2125  git commit -m "Create pauline.txt"
+ 2126  git status
+ 2127  git pull --no-rebase
+ 2128  git log --graph --all --oneline
+ 2129  git status
+ 2130  cd ../pauline/
+ 2131  git status
+ 2132  git log --graph --all --oneline
+ 2133  cd ../fred/
+ 2134  git status
+ 2135  git log --graph --all --oneline
+ 2136  git switch -c create-fred
+ 2137  git status
+ 2138  git push
+ 2139  git push -u origin HEAD
+ 2140  cd ../git-demo/
+ 2141  git status
+ 2142  git pull
+ 2143  git status
+ 2144  touch .DS_Store
+ 2145  ll
+ 2146  git status
+ 2147  vim .gitignore
+ 2148  git status
+ 2149  git add .
+ 2150  git status
+ 2151  git commit -m "Create .gitignore"
+ 2152  git push
+ 2153  git clean -xdi
+ 2154  ll
+ 2155  vim README.md 
+ 2156  git status
+ 2157  git stash
+ 2158  git status
+ 2159  git stash list
+ 2160  git stash pop
+ 2161  git stash list
+ 2162  cd ../eventregistration/
+ 2163  ll
+ 2164  vim EventRegistration-Backend/src/main/java/ca/mcgill/ecse321/eventregistration/controller/
+ 2165  git status
+ 2166  git diff
+ 2167  git add --patch .
+ 2168  git status
+ 2169  git diff
+ 2170  git diff --staged
+ 2171  git status
+ 2172  cd ../git-demo/
+ 2173  history
