@@ -1,3 +1,3 @@
 # Git Demo
 
-This is a demonstration of Git.
+This repository demonstrates how to use Git.
